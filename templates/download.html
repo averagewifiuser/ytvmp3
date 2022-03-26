@@ -1,0 +1,31 @@
+{% extends "layout.html" %} 
+{% block content %} 
+
+<section>
+    <div class="row">
+        <div class="col-12">
+            <form method="POST" action="">
+                <div class="row">
+                    <div class="col-10 m-3">
+                        <label for="videoUrl">Your download is ready </label>
+                        <input name="videoLink" type="text" class="form-control" disabled>
+                    </div>
+                    <!-- <div class="col-1 m-4">
+                        <select class="form-select" name="conversionType">
+                            <option value="mp4">MP4</option>
+                            <option value="mp3">MP3</option>
+                        </select>
+                    </div> -->
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-primary m-3" type="submit">
+                        Download me!
+                    </button>
+                </div>
+            </form>   
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
